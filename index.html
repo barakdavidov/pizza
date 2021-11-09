@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>pizza</title>
+  </head>
+  <body>
+    <h1>Pizza order</h1>
+    <div id="toppings"></div>
+    <script src="./pizza.js"></script>
+    <script>
+      // Instantiate pizza (constructor)
+      const myPizza = new Pizza(document.getElementById("toppings"));
+
+      // Render the UI
+      myPizza.render();
+
+      // Create all the toppings to have available
+      myPizza.createTopping("olives", 5);
+      myPizza.createTopping("onion", 4);
+      myPizza.createTopping("tuna", 10);
+      myPizza.createTopping("extra cheese", 10);
+    </script>
+  </body>
+</html>
